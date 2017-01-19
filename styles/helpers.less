@@ -1,0 +1,36 @@
+//HELPERY//
+@desktop: ~"all and (min-width: 768px)";
+.size(@width;@height) {
+	width: @width;
+	height: @height;
+}
+
+.no-style-list {
+	list-style-type: none;
+}
+
+//wyrownanie
+.left {
+	text-align: left;
+}
+.right {
+	text-align: right;
+}
+.center {
+	text-align: center;
+}
+
+// 
+.basic-transition(@time) {
+	transition: all @time ease-in-out;
+}
+
+.border-radius(@radius) {
+	border-radius: @radius;
+	-moz-border-radius: @radius;
+	-webkit-border-radius: @radius;
+	-o-border-radius: @radius;
+}
+.hide {
+	opacity: 0;
+}
