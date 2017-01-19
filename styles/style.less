@@ -67,10 +67,11 @@ header {
 					text-decoration: none;
 					padding: 0 5px;
 					border-bottom: 5px solid @accent-color;
-					&:hover {
-						.basic-transition(0.3s);
+					.basic-transition(0.3s);
+					&:hover {						
 						color: @basic-text-color;
 						border-bottom: 5px solid @basic-text-color;
+						background: red;
 					}								
 				}
 			}
@@ -128,9 +129,9 @@ header {
 		padding: 10px 25px;
 		text-decoration: none;
 		background: @accent-color;
+		.basic-transition(0.4s);
 		&:hover {
-			border: 1px solid @bright-text-color;
-			.basic-transition(0.4s);
+			border: 1px solid @bright-text-color;			
 			color: @bright-text-color;
 			background: none;
 			
@@ -157,15 +158,25 @@ header {
 		background: @basic-background;
 		padding: 15px;
 		margin-bottom: 15px;
+		.basic-transition(0.8s);
+		h3, span, p {
+			.basic-transition(0.5s);
+		}
 		&:hover {
+			background: @accent-color;
 			h3 {
-				color: blue;
-				.basic-transition(0.6s);
+				color: @bright-text-color;
+				.basic-transition(0.7s);
 			}
 			span {
-				color: red;
-				.basic-transition(0.4s);
+				color: @bright-text-color;
+				.basic-transition(0.3s);
 			}
+			p {
+				color: @bright-text-color;
+				.basic-transition(1s);
+			}
+
 		}
 	}
 	h3 {
